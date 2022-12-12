@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello StaticController!{% endblock %}
+
+{% block body %}
+
+{% for value in items %}
+<div>
+
+The Item with the Id:  {{value.id}} has been added!
+
+</div>
+</div>
+<a href="/delete/{{value.id}}">delete</a>
+<div>
+{% endfor %}
+<a href="/logout">Logout</a>
+{% endblock %}
