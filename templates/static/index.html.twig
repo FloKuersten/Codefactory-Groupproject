@@ -10,5 +10,9 @@ Subject: {{value.subject}}
 / Start: {{value.startDate | date("d M.Y H:m")}}
 / End: {{value.endDate | date("d M.Y H:m")}}
 </div>
+<a href="/add/{{value.id}}"> Add to Cart </a>
+<div>
+</div>
 {% endfor %}
+<a href="/logout">Logout</a>
 {% endblock %}
