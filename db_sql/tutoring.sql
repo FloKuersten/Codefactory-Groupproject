@@ -23,7 +23,7 @@ CREATE TABLE `messenger_messages` (
 --
 
 CREATE TABLE `service` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL, 
   `amount` int(11) NOT NULL,
   `start_date` date NOT NULL,
   `end_date` date NOT NULL,
@@ -31,6 +31,10 @@ CREATE TABLE `service` (
   `picture` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `service` (`amount`, `start_date`, `end_date`, `subject`, `picture`, `status`) VALUES
+('50', '2023.01.01.', '2023.15.02.', 'Mathe', 'https://image.geo.de/30133236/t/Xk/v4/w960/r1.5/-/geometrie-quiz-tafel-c-5638921-png--75661-.png', 'available'),
+('50', '2023.01.01.', '2023.15.02.', 'Mathe', 'https://image.geo.de/30133236/t/Xk/v4/w960/r1.5/-/geometrie-quiz-tafel-c-5638921-png--75661-.png', 'available');
 
 -- --------------------------------------------------------
 
