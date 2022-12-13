@@ -8,8 +8,11 @@ body {
     font-size: 62.5%;
     font-size: 10px;
 }
+
+
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
 
 /* Navbar section */
 
@@ -78,7 +81,7 @@ body {
     height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
     background-position: center top;
-	background-size:cover;
+    background-size: cover;
 }
 
 .navTrigger {
@@ -145,6 +148,8 @@ body {
 
 
 /* Animation */
+
+
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
@@ -341,23 +346,20 @@ body {
     background-color: #111;
 }
 
-
-
-
-
-
 .myH2 {
-	text-align:center;
-	font-size: 4rem;
+    text-align: center;
+    font-size: 4rem;
 }
+
 .myP {
-	text-align: justify;
-	padding-left:15%;
-	padding-right:15%;
-	font-size: 20px;
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
 }
-@media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
+
+@media all and (max-width:700px) {
+    .myP {
+        padding: 2%;
+    }
 }
