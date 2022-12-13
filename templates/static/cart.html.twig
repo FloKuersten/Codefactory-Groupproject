@@ -7,8 +7,8 @@
 {% for value in items %}
 <div>
 
-The Item with the Id:  {{value.id}} has been added!
-
+<p> {{value.fkService.subject}}  </p>
+<p> {{value.fkService.amount}}  </p>
 </div>
 </div>
 <a href="/delete/{{value.id}}">delete</a>
