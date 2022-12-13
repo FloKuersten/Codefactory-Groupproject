@@ -56,8 +56,18 @@ class StaticController extends AbstractController
         $em->flush();
       
         return $this->redirectToRoute('showAll');
+             
+    }
+      #[Route('/checkout', name: 'checkout')]
+    public function checkout(): Response
+    { 
+       
+        
+
+        return $this->render('static/checkout.html.twig', [
+           
             
 
-      
+        ]);
     }
 }
