@@ -7,12 +7,14 @@
 {% for value in items %}
 <div>
 
-The Item with the Id:  {{value.id}} has been added!
-
+<p> Subject: {{value.fkService.subject}}  </p>
+<p> Price: Euro {{value.fkService.amount}}  </p>
 </div>
 </div>
 <a href="/delete/{{value.id}}">delete</a>
 <div>
 {% endfor %}
 <a href="/logout">Logout</a>
+<br/>
+<a href="/static">>>Back</a>
 {% endblock %}
