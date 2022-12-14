@@ -1,0 +1,106 @@
+:root {
+    --main-bg-color: #2385c4;
+    --second-bg-color: #212121;
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Thin";
+    src: url("../fonts/Poppins-Thin.ttf");
+}
+
+#formIMG {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#books {
+    position: absolute;
+    bottom: -2rem;
+    left: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+#books img {
+    max-height: 16vh;
+}
+
+#contactBodyContainer {
+    padding: 10px;
+    margin: 0;
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
+
+@font-face {
+    font-family: "Poppins Thin";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+#contactCol {
+    position: relative;
+}
+
+#contactFormContainer {
+    min-height: 52vh;
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    margin-right: 0px;
+    font-family: "Poppins Thin";
+    color: #fff5ea;
+    top: 25%;
+    left: 60rem;
+    position: absolute;
+    min-width: 50vw;
+}
+
+#sendButton {
+    background-color: #000;
+    font-size: 1rem;
+}
+
+#inputFieldBackground {
+    background-color: var(--main-bg-color);
+}
+
+#manthinking {
+    position: absolute;
+    bottom: -2rem;
+    left: -10em;
+    padding: 0;
+    margin: 0;
+}
+
+#manthinking img {
+    max-height: 25rem;
+}
+
+#letter img {
+    max-height: 25rem;
+}
+
+#letter {
+    position: absolute;
+    bottom: 2rem;
+    left: -50em;
+    padding: 0;
+    margin: 0;
+}
+
+#vectorContact img {
+    max-height: 10rem;
+}
+
+#vectorContact {
+    position: absolute;
+    bottom: 25rem;
+    left: -25em;
+    padding: 0;
+    margin: 0;
+}

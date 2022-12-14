@@ -17,7 +17,7 @@ class Cart
     private ?user $fk_user = null;
 
     #[ORM\ManyToOne]
-    private ?service $fk_service = null;
+    public ?service $fk_service = null;
 
     public function getId(): ?int
     {
