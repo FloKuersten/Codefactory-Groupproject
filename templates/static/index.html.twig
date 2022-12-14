@@ -4,17 +4,23 @@
 
 {% block body %}
 {% for value in service %}
-<div>
-Subject: {{value.subject}}
-/ Price: {{value.amount}}
-/ Start: {{value.startDate | date("d M.Y H:m")}}
-/ End: {{value.endDate | date("d M.Y H:m")}}
-</div>
-<a href="/add/{{value.id}}"> Add to Cart </a>
-<div>
-</div>
-{% endfor %}
-<a href="/cart">Cart</a>
-<br/>
-<a href="/logout">Logout</a>
-{% endblock %}
+<div class="row">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <div class="card mt-5" style="width: 18rem;">
+            <image class="card-img-top" src="{{ service.picture }}" style="height:18rem;"></image>
+            <div class="card text-white bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Name: {{ {{value.subject}} }}</h5>
+                    <p class="card-text">Price: {{ value.amount }}</p>
+                    <p class="card-text">Start date: {{value.startDate | date("d M.Y H:m")}}</p>
+                    <p class="card-text">End date: {{value.endDate | date("d M.Y H:m")}}</p>
+                    <a href="#" class="btn btn-light">Read More <span class="text-danger">&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <a href="/cart">Cart</a>
+    <br/>
+    <a href="/logout">Logout</a>
+    {% endblock %}
