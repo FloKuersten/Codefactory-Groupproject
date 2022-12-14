@@ -19,12 +19,12 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-        ->add('name', TextType::class, array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
-        ->add('last_name', TextType::class,array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
+        ->add('name', TextType::class, array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-dark", "id"=>"inputFieldBackground"]))
+        ->add('last_name', TextType::class,array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-dark", "id"=>"inputFieldBackground"]))
         
-        ->add('birthday', DateType::class,array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
+        ->add('birthday', DateType::class,array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-dark", "id"=>"inputFieldBackground"]))
 
-            ->add('email', null, array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
+            ->add('email', null, array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-dark", "id"=>"inputFieldBackground"]))
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
                 'constraints' => [
@@ -34,7 +34,7 @@ class RegistrationFormType extends AbstractType
                 ],
             ])
             ->add('plainPassword', PasswordType::class, [
-                "attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", 'autocomplete' => 'new-password', "id"=>"inputFieldBackground"],
+                "attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-dark", 'autocomplete' => 'new-password', "id"=>"inputFieldBackground"],
                 // instead of being set onto the object directly,
                 // this is read and encoded in the controller
                 'mapped' => false,
