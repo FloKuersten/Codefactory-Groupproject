@@ -1,3 +1,20 @@
+:root {
+    --main-bg-color: #2385c4;
+    --second-bg-color: #212121;
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Thin";
+    src: url("../fonts/Poppins-Thin.ttf");
+}
+*{
+    font-family: "Poppins Bold";
+}
 /* Resets */
 #sec-about, #sec-features {
     background-color: #2385c4;
