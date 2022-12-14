@@ -22,7 +22,7 @@
 #books {
     position: absolute;
     bottom: -2rem;
-    left: -5em;
+    left: 1em;
     padding: 0;
     margin: 0;
 }
@@ -32,9 +32,7 @@
 }
 
 #contactBodyContainer {
-    min-height: 100vh;
-    min-width: 100vw;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     background-color: var(--main-bg-color);
     color: #fff;
@@ -57,9 +55,9 @@
     font-family: "Poppins Thin";
     color: #fff5ea;
     top: 25%;
-    left: 75%;
+    left: 60rem;
     position: absolute;
-    padding-right: 17%;
+    min-width: 50vw;
 }
 
 #sendButton {
@@ -69,4 +67,40 @@
 
 #inputFieldBackground {
     background-color: var(--main-bg-color);
+}
+
+#manthinking {
+    position: absolute;
+    bottom: -2rem;
+    left: -10em;
+    padding: 0;
+    margin: 0;
+}
+
+#manthinking img {
+    max-height: 25rem;
+}
+
+#letter img {
+    max-height: 25rem;
+}
+
+#letter {
+    position: absolute;
+    bottom: 2rem;
+    left: -50em;
+    padding: 0;
+    margin: 0;
+}
+
+#vectorContact img {
+    max-height: 10rem;
+}
+
+#vectorContact {
+    position: absolute;
+    bottom: 25rem;
+    left: -25em;
+    padding: 0;
+    margin: 0;
 }
