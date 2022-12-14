@@ -12,7 +12,9 @@
     font-family: "Poppins Thin";
     src: url("../fonts/Poppins-Thin.ttf");
 }
-
+html {
+    background-color: var(--main-bg-color);
+}
 #formIMG {
     position: relative;
     padding: 0;
