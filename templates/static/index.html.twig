@@ -1,25 +1,26 @@
-{% extends 'base.html.twig' %}
+ {% block title %}Hello StaticController!{% endblock %} {% block stylesheets %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ asset('CSS/static.css') }}"> {% endblock %} {% block body %}
 
-{% block title %}Hello StaticController!{% endblock %}
-{% block stylesheets %} 
-<link rel="stylesheet" href="{{ asset('../../public/CSS/static.css') }}">
-{% endblock %}
-{% block body %}
-{% for value in service %}
-<div class="row">
-    <div class="col-4 d-flex justify-content-center align-items-center">
-        <div class="card mt-5" style="width: 18rem;">
-            <image class="card-img-top" src="{{ value.picture }}" style="height:18rem;"></image>
-            <div class="card text-white bg-dark">
-                <div class="card-body">
-                    <h5 class="card-title">Name:  {{value.subject}} </h5>
-                    <p class="card-text">Price: {{ value.amount }}</p>
-                    <p class="card-text">Start date: {{value.startDate | date("d M.Y H:m")}}</p>
-                    <p class="card-text">End date: {{value.endDate | date("d M.Y H:m")}}</p>
-                    <a href="#" class="btn btn-light">Read More <span class="text-danger">&rarr;</span></a>
-                </div>
+<div class="d-flex justify-content-center align-items-center gap-4">
+    {% for value in service %}
+
+
+    <div class="card mt-5" style="width: 20rem;">
+        <image class="card-img-top" src="{{ value.picture }}" style="height:15rem;"></image>
+        <div class="card text-white bg-dark">
+            <div class="card-body">
+                <h5 class="card-title">Name: {{value.subject}} </h5>
+                <p class="card-text">Price: {{ value.amount }}</p>
+                <p class="card-text">Start date: {{value.startDate | date("d M.Y H:m")}}</p>
+                <p class="card-text">End date: {{value.endDate | date("d M.Y H:m")}}</p>
+                <a href="#" class="btn btn-light">Read More <span class="text-danger">&rarr;</span></a>
             </div>
         </div>
     </div>
+
+
     {% endfor %}
-    {% endblock %}
+</div>
+
+{% endblock %}

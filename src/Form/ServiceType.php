@@ -12,12 +12,12 @@ class ServiceType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('amount')
-            ->add('startDate')
-            ->add('endDate')
-            ->add('subject')
-            ->add('picture')
-            ->add('status')
+            ->add('amount', null, ["attr"=> ["class"=>"mt-2 mx-2"]])            
+            ->add('startDate', null, ["attr"=> ["class"=>"mt-2 mx-2"]])
+            ->add('endDate', null, ["attr"=> ["class"=>"mt-2 mx-2"]])
+            ->add('subject', null, ["attr"=> ["class"=>"mt-2 mx-2"]])
+            ->add('picture', null, ["attr"=> ["class"=>"mt-2 mx-2"]])
+            ->add('status', null, ["attr"=> ["class"=>"mt-2 mx-2"]])
         ;
     }
 
