@@ -6,3 +6,7 @@
 body {
     background-color: var(--main-bg-color);
 }
+
+#card_margin {
+    margin-top: 10rem;
+}
