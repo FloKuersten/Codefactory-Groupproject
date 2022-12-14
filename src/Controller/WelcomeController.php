@@ -32,13 +32,13 @@ class WelcomeController extends AbstractController
         ]);
     }
 
-    #[Route('/login', name: 'app_login')]
-    public function login(): Response
-    {
-        return $this->render('static/login.html.twig', [
-            'controller_name' => 'WelcomeController',
-        ]);
-    }
+    // #[Route('/login', name: 'app_login')]
+    // public function login(): Response
+    // {
+    //     return $this->render('static/login.html.twig', [
+    //         'controller_name' => 'WelcomeController',
+    //     ]);
+    // }
 
     #[Route('/cart', name: 'app_cart')]
     public function cart(): Response
