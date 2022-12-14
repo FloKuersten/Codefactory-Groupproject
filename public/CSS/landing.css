@@ -1,0 +1,40 @@
+/* Resets */
+#sec-about, #sec-features {
+    background-color: #2385c4;
+    color: white;
+}
+hr {
+    margin-left: 0;
+    max-width: 40px;
+}
+/* Jumbotron (hero) */
+.jumbotron {
+    position: relative;
+    background: url(../hero.png);
+    height: 65rem;
+}
+.jumbotron .container {
+    padding: 100px 0;
+}
+.jumbotron h1, .jumbotron .lead {
+    color: #fff;
+}
+img {
+    max-height: 250px;
+}
+
+/* Features */
+.sec-features .row:nth-of-type(n+2) {
+    margin-top: 160px;
+}
+.sec-features .row:last-of-type {
+    margin-bottom: 160px;
+}
+.sec-features .feature-icon {
+    max-width: 150px;
+}
+/* Testimonials */
+.sec-testimonials {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
