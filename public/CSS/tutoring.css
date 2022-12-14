@@ -1,0 +1,12 @@
+:root {
+    --main-bg-color: #2385C4;
+    --second-bg-color: #212121;
+
+}
+
+#mainContainer {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
