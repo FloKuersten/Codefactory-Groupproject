@@ -34,7 +34,7 @@
                     <div class="container text-center"><a href="{{ path('app_logout') }}" class="">Logout</a></div>
                 </div>
                 {% endif %}
-
+                <h1 class="text-center mb-4">Login</h1>
                 <div class="mb-3 text-center">
                     <label for="inputEmail" class="form-label ">Email</label>
                     <input type="email" class="form-control inputBackground w-75 m-auto border-0 text-white" id="inputFieldBackground" aria-describedby="emailHelp" value="{{ last_username}}" name="email" id="inputEmail" class="form-control" autocomplete="email" required
@@ -50,7 +50,7 @@
                     <button type="submit" class="btn btn-lg text-white rounded-pill" id="loginButton">LOGIN</button>
                 </div>
 
-                <a href="{{ path('app_register') }}" class="text-white text-decoration-none text-small">Your are new here? Please register first.</a>
+                <a href="{{ path('app_register') }}" class="text-white text-decoration-none text-small m-1">Your are new here? Please register first.</a>
 
                 <!-- BOOK IMG -->
                 <div class="container w-auto bg-d" id="books">
