@@ -6,6 +6,7 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
         {% endblock %}
         {% block javascript %}
         {% endblock %}
@@ -17,7 +18,7 @@
         <nav class="nav">
             <div class="container">
                 <div class="logo">
-                    <a href="/">Your Logo</a>
+                    <img src="../images/logo.png" style="height: 90px; width:90px;">
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">

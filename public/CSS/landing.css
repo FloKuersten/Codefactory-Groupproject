@@ -26,8 +26,7 @@ hr {
 }
 /* Jumbotron (hero) */
 .jumbotron {
-    position: relative;
-    background: url(https://i.postimg.cc/sfB31Q1B/hero.png);
+    position: absolute;
     height: 65rem;
 }
 .jumbotron .container {
@@ -54,4 +53,12 @@ img {
 .sec-testimonials {
     padding-top: 128px;
     padding-bottom: 128px;
+}
+
+.hero {
+    background-image: url(../images/hero.png);
+    background-position: center top;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
 }
