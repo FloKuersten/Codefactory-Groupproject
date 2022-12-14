@@ -1,0 +1,19 @@
+[30;43m                                                                                [39;49m
+[30;43m [WARNING] run "symfony.exe server:ca:install" first if you want to run the we  [39;49m
+[30;43m b server with TLS support, or use "--p12" or "--no-tls" to avoid th            [39;49m
+[30;43m is warning                                                                     [39;49m
+[30;43m                                                                                [39;49m
+
+Following [32mWeb Server[39m log file (C:\Users\Dell\.symfony5\log\4ddae910edc620ee14da5be5d7b0cb25f8cedf9b.log)
+Following [32mPHP-CGI[39m log file (C:\Users\Dell\.symfony5\log\4ddae910edc620ee14da5be5d7b0cb25f8cedf9b\79ca75f9e90b4126a5955a33ea6a41ec5e854698.log)
+[30;43m                                                                                [39;49m
+[30;43m [WARNING] The local web server is optimized for local development and MUST ne  [39;49m
+[30;43m ver be used in a production setup.                                             [39;49m
+[30;43m                                                                                [39;49m
+
+[30;42m                                                                                [39;49m
+[30;42m [OK] Web server listening                                                      [39;49m
+[30;42m      The Web server is using PHP CGI 8.1.12                                    [39;49m
+[30;42m      http://127.0.0.1:8000                                                     [39;49m
+[30;42m                                                                                [39;49m
+

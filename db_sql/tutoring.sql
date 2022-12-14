@@ -43,12 +43,9 @@ CREATE TABLE `service_user` (
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
---
+-- -----------------------------------------------------
 -- Table structure for table `user`
 --
-
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `email` varchar(180) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -94,9 +91,9 @@ ALTER TABLE `service_user`
   ADD KEY `IDX_43D062A5ED5CA9E6` (`service_id`),
   ADD KEY `IDX_43D062A5A76ED395` (`user_id`);
 
---
+
 -- Indexes for table `user`
---
+
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `UNIQ_8D93D649E7927C74` (`email`);

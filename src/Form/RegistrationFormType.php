@@ -19,12 +19,12 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-        ->add('name', TextType::class)
-        ->add('last_name', TextType::class)
+        ->add('name', TextType::class, array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
+        ->add('last_name', TextType::class,array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
         
-        ->add('birthday', DateType::class)
+        ->add('birthday', DateType::class,array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
 
-            ->add('email')
+            ->add('email', null, array("attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", "id"=>"inputFieldBackground"]))
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
                 'constraints' => [
@@ -34,10 +34,10 @@ class RegistrationFormType extends AbstractType
                 ],
             ])
             ->add('plainPassword', PasswordType::class, [
+                "attr"=> ["class"=>"form-control inputBackground m-auto border-0 text-white", 'autocomplete' => 'new-password', "id"=>"inputFieldBackground"],
                 // instead of being set onto the object directly,
                 // this is read and encoded in the controller
                 'mapped' => false,
-                'attr' => ['autocomplete' => 'new-password'],
                 'constraints' => [
                     new NotBlank([
                         'message' => 'Please enter a password',
