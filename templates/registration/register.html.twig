@@ -8,9 +8,9 @@
 {% block body %}
 <div class="row row-cols-1" id="registerBodyContainer">
     <div class="col d-flex justify-content-center align-items-center p-0">
-        <div class="row row-cols-1 flex-stretch align-items-end justify-content-center" id="registerFormContainer">
+        <div class="row row-cols-1" id="registerFormContainer">
             <div class="col d-flex flex-column p-4" id="formIMG">
-                <h1 class="text-center">Register page</h1>
+                <h1 class="text-center mb-4">Register</h1>
 
 
     {{ form_start(registrationForm) }}
@@ -18,12 +18,7 @@
       {{ form_row(registrationForm.last_name) }}
       {{ form_row(registrationForm.birthday) }}
       {{ form_row(registrationForm.email) }}
-
-
-
-
-
-        <button type="submit" class="btn">Register</button>
+    <button type="submit" class="btn btn-success m-2">Register</button>
     {{ form_end(registrationForm) }}
 </div>
 </div>
