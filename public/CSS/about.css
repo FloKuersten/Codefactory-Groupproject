@@ -1,0 +1,96 @@
+:root {
+    --main-bg-color: #2385C4;
+    --second-bg-color: #212121;
+
+}
+
+#mainContainer {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
+
+@font-face {
+    font-family: "Poppins Bold Italic";
+    src: url('../fonts/Poppins-BoldItalic.ttf');
+}
+
+
+#topSection {
+    position:relative;
+    font-family: "Poppins Bold Italic";
+    font-size:1.4em;
+}
+
+@font-face {
+    font-family: "Poppins Light";
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
+#middleSection {
+    min-height: 40vh;
+    background-color: var(--second-bg-color);
+    font-family: "Poppins Light";
+    font-weight: normal;
+
+    position: relative;
+}
+
+#bookImg1 {
+    object-fit: cover;
+    object-position: center;
+    max-height: 25vh;
+    transform: rotate(-30deg);
+    filter:drop-shadow(1vw 1vw var(--second-bg-color));
+
+}
+
+
+#bookImg2 {
+    object-fit: cover;
+    object-position: center;
+    max-height: 25vh;
+    transform: rotate(30deg);
+    filter:drop-shadow(1vw 1vw #000);
+}
+
+#card {
+    background-color: var(--second-bg-color);
+}
+
+
+#bottomSection {
+    min-height: 35vh;
+    background-color: var(--second-bg-color);
+    text-decoration: none;
+    position: relative;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#bottomImg1 {
+    max-height: 15vh;
+    max-width: 10vw;
+    position: absolute;
+    right: 80%;
+    bottom: 10%;
+}
+
+#bottomImg2 {
+    max-height: 20vh;
+    max-width: 10vw;
+    position: absolute;
+    right: 10%;
+}
+
+#middleSectionImg {
+    max-height: 20vh;
+    max-width: 10vw;
+    position: absolute;
+    left: 10%;
+    top:10%;
+}
