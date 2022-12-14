@@ -1,7 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello StaticController!{% endblock %}
-
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('CSS/contact.css') }}">
+{% endblock %}
 {% block body %}
 {% for value in service %}
 <div class="row">
