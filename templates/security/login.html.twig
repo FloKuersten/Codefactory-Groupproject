@@ -26,12 +26,15 @@
             <form class="col pt-5" id="formIMG" method="post">
                 {% if error %}
                 <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                {% endif %} {% if app.user %}
-                <div class="mb-3">
-                    You are logged in as {{ app.user.userIdentifier }},
-                    <a href="{{ path('app_logout') }}">Logout</a>
+                {% endif %} 
+                
+                {% if app.user %}
+                <div class="mb-3 text-center">
+                    <p>You are logged in as <span class="text-info">{{ app.user.userIdentifier }}</span></p>
+                    <div class="container text-center"><a href="{{ path('app_logout') }}" class="">Logout</a></div>
                 </div>
                 {% endif %}
+
                 <div class="mb-3 text-center">
                     <label for="inputEmail" class="form-label ">Email</label>
                     <input type="email" class="form-control inputBackground w-75 m-auto border-0 text-white" id="inputFieldBackground" aria-describedby="emailHelp" value="{{ last_username}}" name="email" id="inputEmail" class="form-control" autocomplete="email" required
@@ -43,7 +46,7 @@
                     <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
                 </div>
 
-                <div class="container-fluid m-0 p-0 d-flex justify-content-center mt-5">
+                <div class="container-fluid m-0 p-0 d-flex justify-content-center my-3">
                     <button type="submit" class="btn btn-lg text-white rounded-pill" id="loginButton">LOGIN</button>
                 </div>
 
