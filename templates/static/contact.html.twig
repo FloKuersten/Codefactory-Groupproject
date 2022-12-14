@@ -1,3 +1,7 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}<link rel="stylesheet" href="../CSS/contact.css">{% endblock %}
+{% block body %}
+{#
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +17,7 @@
     <title>Contact Page</title>
 </head>
 
-<body class="row row-cols-1" id="contactBodyContainer">
+<body class="row row-cols-1" id="contactBodyContainer">#}
     <div class="col d-flex p-0">
         <div class="row row-cols-1 flex-stretch align-items-end justify-content-center" id="contactFormContainer">
             <form class="col d-flex flex-column pb-4" id="formIMG">
@@ -56,7 +60,8 @@
             </form>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    {#<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html>#}
+{% endblock %}
