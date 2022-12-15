@@ -36,7 +36,7 @@ hr {
     color: #fff;
 }
 img {
-    max-height: 300px;
+    max-height: 350px;
 }
 
 /* Features */
@@ -69,4 +69,12 @@ img {
     margin-top: 5rem;
     font-size: 70px;
     margin-left: 5rem;
+}
+
+.lead {
+    margin-left: 9rem;
+}
+
+#titleNumbers {
+    font-size: 35px;
 }
