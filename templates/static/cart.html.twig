@@ -1,25 +1,59 @@
-{% extends 'base.html.twig' %} {% block title %}Hello StaticController!{% endblock %} {% block body %}
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="../CSS/cart.css" rel="stylesheet"> ​
+
+    {% extends 'base.html.twig' %}
+{% block title %}Cart{% endblock %}
+{% block body %}
+{# <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> #}
+<link href="../CSS/cart.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-​
-<div class="container">
-
-
-    {% for value in items %}
-    <div>
-
-        <p> Subject: {{value.fkService.subject}} </p>
-        <p> Price: Euro {{value.fkService.amount}} </p>
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <table class="table table-dark w-75 fs-3 table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Start-Date</th>
+                    <th scope="col">End-Date</th>
+                    <th scope="col">Picture</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for value in items %}
+                <tr class="fw-normal">
+                    <td>{{value.fkService.id}}</td>
+                    <td>{{value.fkService.subject}}</td>
+                    <td>{{value.fkService.amount}}</td>
+                    <td>{{value.fkService.startDate|date('d-m-Y')}}</td>
+                    <td>{{value.fkService.endDate|date('d-m-Y')}}</td>
+                    <td><img src="{{value.fkService.picture}}" alt=""></td>
+                    <td><a href="/delete/{{value.id}}" class="text-danger p-0 text-decoration-none">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <a href="/checkout" class="text-decoration-none text-white fs-4 fw-normal">Checkout</a>
+        <a href="/logout" class="text-decoration-none text-white fs-4 fw-normal">Logout</a>
+        <a href="/static" class="text-decoration-none text-white fs-4 fw-normal">Back</a>
     </div>
 </div>
-<a href="/delete/{{value.id}}">delete</a>
-<div>
-    {% endfor %}
-    <a href="/checkout">Checkout</a>
-    <br/>
-    <a href="/logout">Logout</a>
-    <br/>
-    <a href="/static">>>Back</a> {% endblock %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
