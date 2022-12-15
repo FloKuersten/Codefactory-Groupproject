@@ -22,6 +22,8 @@ html {
 }
 #inputFieldBackground {
     background-color: var(--main-bg-color);
+    border: 0px;
+    color: white;
 }
 
 #books {
