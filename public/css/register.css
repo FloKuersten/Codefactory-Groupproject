@@ -122,6 +122,6 @@
     font-size: 1rem;
 }
 
-#inputFieldBackground {
+.form-control {
     background-color: var(--main-bg-color);
 }

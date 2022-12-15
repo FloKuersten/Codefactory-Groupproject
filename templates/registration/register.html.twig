@@ -2,7 +2,7 @@
 
 {% block title %}Register{% endblock %}
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
+    <link rel="stylesheet" href="{{ asset('CSS/register.css') }}">
 {% endblock %}
 
 {% block body %}
@@ -14,12 +14,13 @@
 
 
     {{ form_start(registrationForm) }}
-     {{ form_row(registrationForm.name) }}
-      {{ form_row(registrationForm.last_name) }}
-      {{ form_row(registrationForm.birthday) }}
-      {{ form_row(registrationForm.email) }}
+     {{ form_row(registrationForm.name ,{'attr': {'class': 'bg-info border-0 text-white form-control'}})}}
+      {{ form_row(registrationForm.last_name ,{'attr': {'class': 'bg-info border-0 text-white form-control'}})}}
+      {{ form_row(registrationForm.birthday ,{'attr': {'class': 'bg-info border-0 text-white form-control'}})}}
+      {{ form_row(registrationForm.email ,{'attr': {'class': 'bg-info border-0 text-white form-control'}})}}
     <button type="submit" class="btn btn-success m-2">Register</button>
     {{ form_end(registrationForm) }}
+
 </div>
 </div>
 </div></div>
