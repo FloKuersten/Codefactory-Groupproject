@@ -14,34 +14,34 @@ class Cart
     private ?int $id = null;
 
     #[ORM\ManyToOne]
-    private ?user $fk_user = null;
+    public ?User $fk_user = null;
 
     #[ORM\ManyToOne]
-    public ?service $fk_service = null;
+    public ?Service $fk_service = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getFkUser(): ?user
+    public function getFkUser(): ?User
     {
         return $this->fk_user;
     }
 
-    public function setFkUser(?user $fk_user): self
+    public function setFkUser(?User $fk_user): self
     {
         $this->fk_user = $fk_user;
 
         return $this;
     }
 
-    public function getFkService(): ?service
+    public function getFkService(): ?Service
     {
         return $this->fk_service;
     }
 
-    public function setFkService(?service $fk_service): self
+    public function setFkService(?Service $fk_service): self
     {
         $this->fk_service = $fk_service;
 

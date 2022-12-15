@@ -40,11 +40,11 @@ class WelcomeController extends AbstractController
     //     ]);
     // }
 
-    #[Route('/cart', name: 'app_cart')]
-    public function cart(): Response
-    {
-        return $this->render('static/cart.html.twig', [
-            'controller_name' => 'WelcomeController',
-        ]);
-    }
+    // #[Route('/cart', name: 'app_cart')]
+    // public function cart(): Response
+    // {
+    //     return $this->render('static/cart.html.twig', [
+    //         'controller_name' => 'WelcomeController',
+    //     ]);
+    // }
 }

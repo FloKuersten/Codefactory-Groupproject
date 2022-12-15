@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Cart;
 use App\Entity\Service;
+use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,6 +24,7 @@ class StaticController extends AbstractController
     #[Route('/cart', name: 'showAll')]
     public function showCart(ManagerRegistry $doctrine): Response
     { 
+        // dd($this->getUser());
         $items = $doctrine->getRepository(Cart::class)->findBy(array("fk_user"=>$this->getUser()->getId()));
 
         return $this->render('static/cart.html.twig', [
